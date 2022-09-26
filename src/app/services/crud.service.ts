@@ -9,7 +9,9 @@ import { Observable } from 'rxjs';
 })
 export class CrudService {
 
+  // variavel API_PATH recebe a api(kotlin) contendo o backend
   private API_PATH = 'http://localhost:8080/';
+
 // injeta modulo httpclient em variavel http
 constructor(private http: HttpClient){}
 
