@@ -1,0 +1,27 @@
+<h2>Extracoes Cadastradas</h2>
+<button (click)="allExtracoes"> LISTAR TUDO </button>
+<div><span>id: </span> {{allExtracoes}}  </div>
+<div><span>Titulo: </span> {{allExtracoes}}  </div>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Descricao</th>
+    <th>Status</th>
+    <th>Data</th>
+  </tr>
+<!---    <tr *ngFor="let ext of extract">
+    <td> {{ext.id}} </td>
+    <td> {{ext.titulo}} </td>
+    <td> {{ext.descricao}} </td>
+    <td> {{ext.status}} </td>
+    <td> {{ext.dataSolicitacao}} </td>
+    <td><button>Atualizar</button></td>)
+  </tr> -->
+<h1> {{allExtracoes}}</h1>
+</table>
+
+<div>
+  <label for="titulo"> Titulo Extracao:</label>
+  <input id="titulo" [(ngModel)]="extracoes.titulo" placeholder="Titulo" type="text">
+</div>
